@@ -9,6 +9,36 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <button class="btn-play">Let's Play Rock, Paper, Scissors</button>
+    <header class="header" style="text-align: center">
+      <h1>Let's play a round of Rock, Paper, Scissors</h1>
+      <button class="btn-start">Let's play</button>
+    </header>
+    <div class="game-container hidden">
+      <div class="btn-choices-container">
+        <button class="btn-choices btn-rock" data-choice="rock"></button>
+        <button class="btn-choices btn-paper" data-choice="paper"></button>
+        <button
+          class="btn-choices btn-scissors"
+          data-choice="scissors"
+        ></button>
+      </div>
+      <div style="text-align: center">
+        <div id="score-container--container">
+          <div class="score-container">
+            <h1>Player Score:</h1>
+            <span class="score player-score">0</span>
+          </div>
+          <div class="score-container">
+            <h1>Computer Score:</h1>
+            <span class="score computer-score">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="results hidden">
+      <h1 class="results-message">You win!</h1>
+      <button class="btn-play-again">Play Again!</button>
+    </div>
   </body>
 </html>

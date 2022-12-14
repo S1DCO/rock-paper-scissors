@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -10,4 +14,56 @@ button {
   font-family: "Times New Roman";
   box-sizing: border-box;
   border-radius: 12px;
+}
+span {
+  margin: 10px;
+  padding: 20px;
+  border-style: dashed;
+  border-width: 10px;
+  border-color: black;
+  width: 100px;
+}
+.score-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+#score-container--container {
+  display: flex;
+  justify-content: space-around;
+}
+.btn-choices-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.btn-choices {
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+.btn-rock {
+  background-image: url("img/rock.png");
+}
+.btn-paper {
+  background-image: url("img/paper.png");
+}
+.btn-scissors {
+  background-image: url("img/scissors.png");
+}
+.hidden {
+  display: none;
+}
+.score {
+  font-size: 30px;
 }
